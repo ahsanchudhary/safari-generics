@@ -1,6 +1,6 @@
 package shopping;
 
-public class Glove {
+public class Glove implements Clothing, Sized, Colored {
   private int size;
   private String color;
 
@@ -31,5 +31,10 @@ public class Glove {
         "size=" + size +
         ", color='" + color + '\'' +
         '}';
+  }
+
+  @Override
+  public int price() {
+    return 10;
   }
 }

@@ -1,8 +1,8 @@
 package shopping;
 
 public class Pair<E> {
-  private E left;
-  private E right;
+  protected E left;
+  protected E right;
 
   public Pair(E left, E right) {
     this.left = left;
